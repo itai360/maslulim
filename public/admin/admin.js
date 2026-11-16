@@ -5,7 +5,7 @@ import { renderOffer, formatPrice } from '/lib/render.js';
 
 const BUCKET = 'offer-media';
 const app = document.getElementById('app');
-let sb, user;
+let sb, user, CFG = {};
 const state = { view: 'pages', pages: [], site: null, links: [], linkFilter: 'all', editor: null, lastLink: null };
 
 // ════════════════════════ small helpers ════════════════════════
@@ -75,6 +75,7 @@ async function boot() {
     app.replaceChildren(h('div', { class: 'login' }, h('h1', {}, 'חסרה הגדרה'), h('p', {}, 'SUPABASE_URL / SUPABASE_PUBLISHABLE_KEY לא מוגדרים ב-Vercel.')));
     return;
   }
+  CFG = cfg;
   sb = createClient(cfg.supabaseUrl, cfg.supabaseKey, { auth: { persistSession: true, detectSessionInUrl: true, flowType: 'implicit' } });
   // Don't call Supabase from inside the auth callback (can deadlock) - defer with setTimeout.
   sb.auth.onAuthStateChange((ev, session) => {
@@ -87,27 +88,58 @@ async function boot() {
   });
 }
 
-function showLogin(message) {
+let authSettings = null;
+async function loadAuthSettings() {
+  if (authSettings) return authSettings;
+  try {
+    const r = await fetch(CFG.supabaseUrl + '/auth/v1/settings', { headers: { apikey: CFG.supabaseKey } });
+    authSettings = await r.json();
+  } catch { authSettings = {}; }
+  return authSettings;
+}
+
+async function showLogin(message) {
+  const settings = await loadAuthSettings();
   const msg = h('div', { class: 'msg' }, message || '');
-  const email = h('input', { type: 'email', placeholder: 'כתובת אימייל', required: true, dir: 'ltr', autocomplete: 'email' });
+  const email = h('input', { type: 'email', placeholder: 'אימייל', required: true, dir: 'ltr', autocomplete: 'email' });
+  const pass = h('input', { type: 'password', placeholder: 'סיסמה (לפחות 8 תווים)', required: true, dir: 'ltr', autocomplete: 'current-password', minlength: 8 });
+  const redirectTo = location.origin + '/admin/';
+  const say = (t, err) => { msg.textContent = t; msg.style.color = err ? 'var(--bad)' : ''; };
+  async function signIn(e) {
+    e.preventDefault();
+    say('נכנס…');
+    const { error } = await sb.auth.signInWithPassword({ email: email.value.trim(), password: pass.value });
+    if (error) say(/confirm/i.test(error.message) ? 'צריך קודם לאשר את המייל - חפשו מייל אימות בתיבה.' : /invalid/i.test(error.message) ? 'אימייל או סיסמה שגויים. פעם ראשונה? לחצו "הרשמה ראשונה".' : error.message, true);
+  }
+  async function signUp() {
+    if (!email.reportValidity() || !pass.reportValidity()) return;
+    say('יוצר חשבון…');
+    const { data, error } = await sb.auth.signUp({ email: email.value.trim(), password: pass.value, options: { emailRedirectTo: redirectTo } });
+    if (error) return say(error.message, true);
+    if (data.session) return; // signed in directly
+    say('נשלח מייל אימות. לחצו על הקישור במייל, ואז חזרו לכאן והיכנסו עם האימייל והסיסמה.');
+  }
+  async function magic() {
+    if (!email.reportValidity()) return;
+    say('שולח…');
+    const { error } = await sb.auth.signInWithOtp({ email: email.value.trim(), options: { emailRedirectTo: redirectTo, shouldCreateUser: false } });
+    say(error ? error.message : 'נשלח קישור כניסה למייל.', !!error);
+  }
   app.replaceChildren(h('div', { class: 'login' },
     h('h1', {}, 'ניהול מסלולים'),
     h('p', {}, 'שני ניסנבוים · עיצוב פנים'),
-    h('button', {
-      class: 'btn primary', onclick: async () => {
-        const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin + '/admin/' } });
-        if (error) msg.textContent = error.message;
-      },
-    }, 'כניסה עם Google'),
-    h('div', { class: 'or' }, 'או קישור כניסה למייל'),
-    h('form', {
-      onsubmit: async (e) => {
-        e.preventDefault();
-        msg.textContent = 'שולח…';
-        const { error } = await sb.auth.signInWithOtp({ email: email.value.trim(), options: { emailRedirectTo: location.origin + '/admin/', shouldCreateUser: false } });
-        msg.textContent = error ? 'שגיאה: ' + error.message : 'נשלח! בדקו את תיבת המייל ולחצו על הקישור.';
-      },
-    }, email, h('button', { class: 'btn', type: 'submit' }, 'שלחו לי קישור כניסה')),
+    settings?.external?.google ? [
+      h('button', { class: 'btn', onclick: async () => {
+        const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } });
+        if (error) say(error.message, true);
+      } }, 'כניסה עם Google'),
+      h('div', { class: 'or' }, 'או'),
+    ] : null,
+    h('form', { onsubmit: signIn }, email, pass,
+      h('button', { class: 'btn primary', type: 'submit' }, 'כניסה'),
+      h('button', { class: 'btn ghost', type: 'button', onclick: signUp }, 'הרשמה ראשונה'),
+    ),
+    h('div', { class: 'or' }, h('a', { href: '#', onclick: (e) => { e.preventDefault(); magic(); } }, 'שכחתי סיסמה - שלחו לי קישור כניסה למייל')),
     msg,
   ));
 }

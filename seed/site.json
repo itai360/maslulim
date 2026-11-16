@@ -3,11 +3,11 @@
     "name": "SHANI NISSINBOIEM",
     "title": "INTERIOR DESIGNER",
     "logo": {
-      "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/Untitled-design.png",
+      "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/site/logo.png",
       "alt": "Shani Nissinboiem — Interior Design Studio"
     },
     "footer_logo": {
-      "url": "media/footer-logo.png",
+      "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/site/footer-logo.png",
       "alt": "שני ניסנבוים"
     }
   },
@@ -54,7 +54,7 @@
       }
     ],
     "photo": {
-      "url": "media/about.jpg",
+      "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/site/about.jpg",
       "alt": "שני ניסנבוים"
     }
   },
@@ -128,7 +128,7 @@
         "title": "T House",
         "url": "https://shanissinboiem.com/t-house/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/11/shani-108-scaled.jpg",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/t-house.jpg",
           "alt": "T House"
         }
       },
@@ -136,7 +136,7 @@
         "title": "Urban House",
         "url": "https://shanissinboiem.com/urban-house/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/urban-house.jpg",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/urban-house.jpg",
           "alt": "Urban House"
         }
       },
@@ -144,7 +144,7 @@
         "title": "The L House",
         "url": "https://shanissinboiem.com/the-l-house/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%9E%D7%AA%D7%97%D7%9C%D7%A4%D7%AA-1.jpg",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/the-l-house.jpg",
           "alt": "The L House"
         }
       },
@@ -152,7 +152,7 @@
         "title": "Winpac",
         "url": "https://shanissinboiem.com/winpac/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/winpac5.jpg",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/winpac.jpg",
           "alt": "Winpac"
         }
       },
@@ -160,7 +160,7 @@
         "title": "Tzoofit",
         "url": "https://shanissinboiem.com/tzoofit/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/tzoofit.png",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/tzoofit.png",
           "alt": "Tzoofit"
         }
       },
@@ -168,7 +168,7 @@
         "title": "Neve Oz",
         "url": "https://shanissinboiem.com/neve-oz/",
         "image": {
-          "url": "https://shanissinboiem.com/wp-content/uploads/2025/11/%D7%A4%D7%A8%D7%98%D7%95%D7%A9%D7%A4%D7%AA%D7%97%D7%AA%D7%A7%D7%95%D7%95%D7%94_-2-scaled.jpg",
+          "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/gallery/neve-oz.jpg",
           "alt": "Neve Oz"
         }
       }

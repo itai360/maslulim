@@ -26,22 +26,22 @@
         "en": "\"Precision in the details is what creates the difference in feeling\""
       },
       "photo": {
-        "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+        "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/cover/cover-1536.jpg",
         "srcset": [
           {
-            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-768x432.jpg",
+            "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/cover/cover-768.jpg",
             "w": 768
           },
           {
-            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1024x576.jpg",
+            "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/cover/cover-1024.jpg",
             "w": 1024
           },
           {
-            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+            "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/cover/cover-1536.jpg",
             "w": 1536
           },
           {
-            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-2048x1152.jpg",
+            "url": "https://fwmzlzilvkpldfqcyqnl.supabase.co/storage/v1/object/public/offer-media/cover/cover-2048.jpg",
             "w": 2048
           }
         ],

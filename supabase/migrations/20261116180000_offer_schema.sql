@@ -1,7 +1,8 @@
 -- ════════════════════════════════════════════════════════════════════
 -- Maslulim ("offer pages"): client-facing package/price pages.
--- Lives in the SND Supabase project next to the studio app, but uses only
--- its own offer_* tables, its own storage bucket and its own admin list.
+-- Lives in the "WebSite" Supabase project (org: Shani Nissinboiem Interior Design)
+-- next to the site's contact form, using only its own offer_* tables,
+-- its own storage bucket and its own admin list.
 -- Pages are served by the Vercel site (repo itai360/maslulim) and edited at /admin.
 -- ════════════════════════════════════════════════════════════════════
 
