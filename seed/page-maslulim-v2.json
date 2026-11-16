@@ -1,0 +1,888 @@
+{
+  "slug": "maslulim-v2",
+  "title": "מסלולי ליווי v2 (Essential ₪22,000)",
+  "content": {
+    "meta": {
+      "title": {
+        "he": "שני ניסנבוים – מסלולי ליווי",
+        "en": "Shani Nissinboiem – Design Packages"
+      },
+      "og_description": {
+        "he": "מסלולי ליווי לפרויקט תכנון ועיצוב פנים",
+        "en": ""
+      }
+    },
+    "cover": {
+      "headline": {
+        "he": "מסלולי ליווי",
+        "en": "Design Packages"
+      },
+      "subheadline": {
+        "he": "לפרויקט תכנון ועיצוב פנים",
+        "en": "For Interior Planning & Design"
+      },
+      "tagline": {
+        "he": "״הדיוק בפרטים הוא זה שיוצר את ההבדל בתחושה״",
+        "en": "\"Precision in the details is what creates the difference in feeling\""
+      },
+      "photo": {
+        "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+        "srcset": [
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-768x432.jpg",
+            "w": 768
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1024x576.jpg",
+            "w": 1024
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+            "w": 1536
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-2048x1152.jpg",
+            "w": 2048
+          }
+        ],
+        "width": 2560,
+        "height": 1440,
+        "alt": "כניסה לבית פרטי עם דלת שחורה מעוצבת – פרויקט של שני ניסנבוים"
+      }
+    },
+    "nav_label": {
+      "he": "מסלולים",
+      "en": "Packages"
+    },
+    "wa_default": {
+      "he": "ליווי עיצוב פנים",
+      "en": "interior design service"
+    },
+    "packages": {
+      "intro": {
+        "tag": {
+          "he": "מסלולי שירות",
+          "en": "Service Packages"
+        },
+        "title": {
+          "he": "שלושה מסלולים.\nגישה אחת.",
+          "en": "Three packages.\nOne approach."
+        },
+        "text": {
+          "he": "כל מסלול מותאם לשלב שבו אתם נמצאים. הבסיס תמיד אותו דבר — הקשבה, דיוק, ליווי אישי.",
+          "en": "Each package fits the stage you are at. The foundation is always the same — listening, precision, and personal guidance."
+        }
+      },
+      "default_index": 1,
+      "price_note": {
+        "he": "לפני מע״מ · לפרויקט",
+        "en": "Before VAT · per project"
+      },
+      "items": [
+        {
+          "name": {
+            "he": "Essential",
+            "en": ""
+          },
+          "desc": {
+            "he": "מסלול זה מיועד לגיבוש כיוון תכנוני ועיצובי ברור",
+            "en": "This package is designed to establish a clear planning and design direction"
+          },
+          "scope": {
+            "he": "מתאים לפרויקט ממוקד",
+            "en": "Suitable for a focused project"
+          },
+          "price": 22000,
+          "featured": false,
+          "groups": [
+            {
+              "title": {
+                "he": "פגישת היכרות",
+                "en": "Introductory Meeting"
+              },
+              "items": [
+                {
+                  "he": "הבנת חזון הלקוח והצרכים",
+                  "en": "Understanding the client's vision and needs"
+                },
+                {
+                  "he": "אפיון חללים לפי אורח חיים",
+                  "en": "Characterizing the spaces according to lifestyle"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "תכנון חלל",
+                "en": "Space Planning"
+              },
+              "items": [
+                {
+                  "he": "תכנית העמדה עד 2 חלופות",
+                  "en": "Layout plan, up to 2 options"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "קונספט ושפה עיצובית",
+                "en": "Concept & Design Language"
+              },
+              "items": [
+                {
+                  "he": "הדמייה מפורטת לחלל הציבורי (ניתן להוסיף הדמיות נוספות)",
+                  "en": "A detailed rendering of the public space (additional renderings can be added)"
+                },
+                {
+                  "he": "הגדרת כיוון עיצוב אחיד וברור",
+                  "en": "Defining a unified, clear design direction"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "נגרויות",
+                "en": "Carpentry"
+              },
+              "items": [
+                {
+                  "he": "סט תכנון ושרטוט נגרות בהתאמה אישית עבור מטבח וחדרי רחצה",
+                  "en": "A custom carpentry design and drafting set for the kitchen and bathrooms"
+                },
+                {
+                  "he": "פירוט מלא לייצור",
+                  "en": "Full specifications for production"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "חומרים וגמרים",
+                "en": "Materials & Finishes"
+              },
+              "items": [
+                {
+                  "he": "בחירת כל חומרי הגמר בפרויקט כולל תאורה",
+                  "en": "Selecting all the finishing materials in the project, including lighting"
+                },
+                {
+                  "he": "יום רכש מרוכז",
+                  "en": "One concentrated procurement day"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "he": "Premium",
+            "en": ""
+          },
+          "desc": {
+            "he": "מסלול זה כולל תכנון מקיף ומפורט, תוך יצירת תמונה מלאה וברורה של התוצאה הסופית לפני תחילת הביצוע",
+            "en": "This package includes comprehensive, detailed planning, creating a full and clear picture of the final result before execution begins"
+          },
+          "scope": {
+            "he": "מתאים לפרויקטים עד כ-200 מ״ר",
+            "en": "Suitable for projects up to ~200 m²"
+          },
+          "price": 36000,
+          "featured": true,
+          "groups": [
+            {
+              "title": {
+                "he": "פגישת היכרות",
+                "en": "Introductory Meeting"
+              },
+              "items": [
+                {
+                  "he": "הבנת חזון הלקוח והצרכים",
+                  "en": "Understanding the client's vision and needs"
+                },
+                {
+                  "he": "אפיון חללים לפי אורח חיים",
+                  "en": "Characterizing the spaces according to lifestyle"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "תכנון אדריכלי מלא",
+                "en": "Full Architectural Planning"
+              },
+              "items": [
+                {
+                  "he": "תכנית העמדה עד 4 חלופות",
+                  "en": "Layout plan, up to 4 options"
+                },
+                {
+                  "he": "בחינת אפשרויות לחלוקת חלל",
+                  "en": "Exploring options for dividing the space"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "הדמיות מקצועיות",
+                "en": "Professional Renderings"
+              },
+              "items": [
+                {
+                  "he": "הדמיות לחללים מרכזיים",
+                  "en": "Renderings of the main spaces"
+                },
+                {
+                  "he": "המחשה מלאה לפני ביצוע",
+                  "en": "Full visualization before execution"
+                },
+                {
+                  "he": "דיוק החלטות תכנוניות וחומריות מראש",
+                  "en": "Refining planning and material decisions in advance"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "סט תוכניות עבודה",
+                "en": "Set of Working Plans"
+              },
+              "items": [
+                {
+                  "he": "הריסה, בנייה, ריהוט",
+                  "en": "Demolition, construction, furniture"
+                },
+                {
+                  "he": "חשמל, תאורה, אינסטלציה",
+                  "en": "Electrical, lighting, plumbing"
+                },
+                {
+                  "he": "ריצוף, תקרות, פריסות אריחים",
+                  "en": "Flooring, ceilings, tile layouts"
+                },
+                {
+                  "he": "אלומיניום במידת הצורך",
+                  "en": "Aluminum work as needed"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "חומרים וגמרים",
+                "en": "Materials & Finishes"
+              },
+              "items": [
+                {
+                  "he": "בחירת כל חומרי הגמר בפרויקט",
+                  "en": "Selecting all the finishing materials in the project"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "ליווי",
+                "en": "Guidance"
+              },
+              "items": [
+                {
+                  "he": "עד 2 ימי רכש מרוכזים (סניטרים, מטבחים, ריצופים, תאורה, ריהוט וכו׳)",
+                  "en": "Up to 2 concentrated procurement days (sanitaryware, kitchens, flooring, lighting, furniture, etc.)"
+                },
+                {
+                  "he": "עד 4 ביקורים בנכס",
+                  "en": "Up to 4 site visits"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "he": "Signature",
+            "en": ""
+          },
+          "desc": {
+            "he": "מסלול זה כולל ליווי אישי וצמוד לאורך כל שלבי הפרויקט",
+            "en": "This package includes close, personal guidance throughout every stage of the project"
+          },
+          "scope": {
+            "he": "מתאים לפרויקטים בכל סדר גודל",
+            "en": "Suitable for projects of any size"
+          },
+          "price": 45000,
+          "featured": false,
+          "groups": [
+            {
+              "title": {
+                "he": "פגישת היכרות",
+                "en": "Introductory Meeting"
+              },
+              "items": [
+                {
+                  "he": "הבנת חזון הלקוח והצרכים",
+                  "en": "Understanding the client's vision and needs"
+                },
+                {
+                  "he": "אפיון חללים לפי אורח חיים",
+                  "en": "Characterizing the spaces according to lifestyle"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "תכנון אדריכלי מלא",
+                "en": "Full Architectural Planning"
+              },
+              "items": [
+                {
+                  "he": "תכנית העמדה עד 4 חלופות",
+                  "en": "Layout plan, up to 4 options"
+                },
+                {
+                  "he": "בחינת אפשרויות לחלוקת חלל",
+                  "en": "Exploring options for dividing the space"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "הדמיות מקצועיות",
+                "en": "Professional Renderings"
+              },
+              "items": [
+                {
+                  "he": "הדמיות לחללים מרכזיים",
+                  "en": "Renderings of the main spaces"
+                },
+                {
+                  "he": "המחשה מלאה לפני ביצוע",
+                  "en": "Full visualization before execution"
+                },
+                {
+                  "he": "דיוק החלטות תכנוניות וחומריות מראש",
+                  "en": "Refining planning and material decisions in advance"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "סט תוכניות עבודה",
+                "en": "Set of Working Plans"
+              },
+              "items": [
+                {
+                  "he": "הריסה, בנייה, ריהוט",
+                  "en": "Demolition, construction, furniture"
+                },
+                {
+                  "he": "חשמל, תאורה, אינסטלציה",
+                  "en": "Electrical, lighting, plumbing"
+                },
+                {
+                  "he": "ריצוף, תקרות, פריסות אריחים",
+                  "en": "Flooring, ceilings, tile layouts"
+                },
+                {
+                  "he": "אלומיניום במידת הצורך",
+                  "en": "Aluminum work as needed"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "נגרויות",
+                "en": "Carpentry"
+              },
+              "items": [
+                {
+                  "he": "סט תכנון ושרטוט נגרות בהתאמה אישית עבור כל הבית",
+                  "en": "A custom carpentry design and drafting set for the entire home"
+                },
+                {
+                  "he": "פירוט מלא לייצור",
+                  "en": "Full specifications for production"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "ריהוט",
+                "en": "Furniture"
+              },
+              "items": [
+                {
+                  "he": "רשימת רכש עם אופציות לפי תקציב",
+                  "en": "A shopping list with options by budget"
+                },
+                {
+                  "he": "לכל החללים",
+                  "en": "For all the spaces"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "חומרים וגמרים",
+                "en": "Materials & Finishes"
+              },
+              "items": [
+                {
+                  "he": "בחירת כל חומרי הגמר בפרויקט",
+                  "en": "Selecting all the finishing materials in the project"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "ליווי ופיקוח",
+                "en": "Guidance & Supervision"
+              },
+              "items": [
+                {
+                  "he": "עד 3 ימי רכש מרוכזים (סניטרים, מטבחים, ריצופים, תאורה, ריהוט וכו׳)",
+                  "en": "Up to 3 concentrated procurement days (sanitaryware, kitchens, flooring, lighting, furniture, etc.)"
+                },
+                {
+                  "he": "עד 8 ביקורים בנכס",
+                  "en": "Up to 8 site visits"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "compare": {
+      "enabled": true,
+      "tag": {
+        "he": "טבלת השוואה",
+        "en": "Comparison Table"
+      },
+      "title": {
+        "he": "מה כלול\nבכל מסלול?",
+        "en": "What's included\nin each package?"
+      },
+      "price_label": {
+        "he": "מחיר לפרויקט",
+        "en": "Price per project"
+      },
+      "rows": [
+        {
+          "label": {
+            "he": "פגישת היכרות",
+            "en": "Introductory Meeting"
+          },
+          "cells": [
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "קונספט ומצגת השראה",
+            "en": "Concept & inspiration board"
+          },
+          "cells": [
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "תכנית העמדה",
+            "en": "Layout Plan"
+          },
+          "cells": [
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 2 חלופות",
+                "en": "Up to 2 options"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 4 חלופות",
+                "en": "Up to 4 options"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 4 חלופות",
+                "en": "Up to 4 options"
+              }
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "הדמיות מקצועיות",
+            "en": "Professional Renderings"
+          },
+          "cells": [
+            {
+              "type": "n"
+            },
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "סט תוכניות עבודה",
+            "en": "Set of Working Plans"
+          },
+          "cells": [
+            {
+              "type": "n"
+            },
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "נגרויות",
+            "en": "Carpentry"
+          },
+          "cells": [
+            {
+              "type": "y"
+            },
+            {
+              "type": "n"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "ריהוט",
+            "en": "Furniture"
+          },
+          "cells": [
+            {
+              "type": "y"
+            },
+            {
+              "type": "half"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "חומרים וגמרים",
+            "en": "Materials & Finishes"
+          },
+          "cells": [
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "ימי רכש",
+            "en": "Procurement days"
+          },
+          "cells": [
+            {
+              "type": "v",
+              "text": {
+                "he": "יום 1",
+                "en": "1 day"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 2 ימים",
+                "en": "Up to 2 days"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 3 ימים",
+                "en": "Up to 3 days"
+              }
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "ביקורים בנכס",
+            "en": "Site visits"
+          },
+          "cells": [
+            {
+              "type": "n"
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 4 ביקורים",
+                "en": "Up to 4 visits"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 8 ביקורים",
+                "en": "Up to 8 visits"
+              }
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "ליווי ופיקוח",
+            "en": "Guidance & Supervision"
+          },
+          "cells": [
+            {
+              "type": "n"
+            },
+            {
+              "type": "n"
+            },
+            {
+              "type": "y"
+            }
+          ]
+        },
+        {
+          "label": {
+            "he": "היקף מתאים",
+            "en": "Suitable scope"
+          },
+          "cells": [
+            {
+              "type": "v",
+              "text": {
+                "he": "פרויקט ממוקד",
+                "en": "Focused project"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "עד 200 מ\"ר",
+                "en": "Up to 200 m²"
+              }
+            },
+            {
+              "type": "v",
+              "text": {
+                "he": "כל גודל",
+                "en": "Any size"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "addons": {
+      "enabled": true,
+      "tag": {
+        "he": "שירותים משלימים",
+        "en": "Complementary Services"
+      },
+      "title": {
+        "he": "תוספות ואופציות",
+        "en": "Add-ons & Options"
+      },
+      "text": {
+        "he": "כל תוספת ניתנת לשילוב בכל אחד מהמסלולים, בתיאום מראש.",
+        "en": "Any add-on can be combined with any of the packages, by prior arrangement."
+      },
+      "items": [
+        {
+          "name": {
+            "he": "הדמיה נוספת",
+            "en": "Additional rendering"
+          },
+          "desc": {
+            "he": "המחשה ויזואלית לחלל נוסף",
+            "en": "Visual rendering of an additional space"
+          },
+          "price": {
+            "he": "800 – 1,500 ₪",
+            "en": ""
+          }
+        },
+        {
+          "name": {
+            "he": "יום רכש נוסף",
+            "en": "Additional procurement day"
+          },
+          "desc": {
+            "he": "ליווי נוסף בבחירת חומרים וספקים",
+            "en": "Additional guidance in selecting materials and suppliers"
+          },
+          "price": {
+            "he": "1,500 ₪",
+            "en": ""
+          }
+        },
+        {
+          "name": {
+            "he": "תכנון נגרות נוסף",
+            "en": "Additional carpentry design"
+          },
+          "desc": {
+            "he": "תכנון מורכב מעבר להיקף",
+            "en": "Complex design beyond the defined scope"
+          },
+          "price": {
+            "he": "לפי היקף",
+            "en": "By scope"
+          }
+        },
+        {
+          "name": {
+            "he": "תוכניות / שינויים",
+            "en": "Plans / revisions"
+          },
+          "desc": {
+            "he": "עדכון תוכניות לאחר אישור",
+            "en": "Updating plans after approval"
+          },
+          "price": {
+            "he": "לפי צורך",
+            "en": "As needed"
+          }
+        },
+        {
+          "name": {
+            "he": "כתב כמויות",
+            "en": "Bill of quantities"
+          },
+          "desc": {
+            "he": "מסמך מפורט",
+            "en": "Detailed document"
+          },
+          "price": {
+            "he": "1,200 ₪",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "notes": {
+      "enabled": true,
+      "title": {
+        "he": "הבהרות כלליות",
+        "en": "General Notes"
+      },
+      "items": [
+        {
+          "he": "היקף השירות נגזר מגודל הנכס, מורכבותו ורמת הליווי הנדרשת. לפרויקטים גדולים מהמוגדר תינתן הצעה מותאמת.",
+          "en": "The scope of the service depends on the size of the property, its complexity, and the level of guidance required. For projects larger than defined, a tailored quote will be provided."
+        },
+        {
+          "he": "ייתכנו התאמות להצעה בהתאם לנתוני הפרויקט הספציפי. כל שינוי יאושר מראש ובכתב.",
+          "en": "The offer may be adjusted according to the specifics of the particular project. Any change will be approved in advance and in writing."
+        },
+        {
+          "he": "שירותים נוספים מעבר להגדרת המסלול יתומחרו בנפרד. הכל ברור ומוגדר מראש — אין הפתעות.",
+          "en": "Services beyond the defined package will be priced separately. Everything is clear and defined in advance — no surprises."
+        }
+      ]
+    },
+    "cta": {
+      "enabled": false,
+      "tag": {
+        "he": "הצעד הבא",
+        "en": "The Next Step"
+      },
+      "title": {
+        "he": "מוכנים\nלהתחיל?",
+        "en": "Ready\nto begin?"
+      },
+      "text": {
+        "he": "אשלח לכם את החוזה תוך 24 שעות",
+        "en": "I'll send you the contract within 24 hours"
+      },
+      "choices": [
+        {
+          "tier": {
+            "he": "מסלול ראשון",
+            "en": "First package"
+          },
+          "package": 0
+        },
+        {
+          "tier": {
+            "he": "מסלול שני",
+            "en": "Second package"
+          },
+          "package": 1
+        },
+        {
+          "tier": {
+            "he": "מסלול שלישי",
+            "en": "Third package"
+          },
+          "package": 2
+        }
+      ],
+      "yes": {
+        "he": "כן, אני רוצה להתקדם",
+        "en": "Yes, I want to move forward"
+      },
+      "no": {
+        "he": "עדיין לא בשלב הזה",
+        "en": "Not at this stage yet"
+      }
+    },
+    "ui": {
+      "pick_first": {
+        "he": "אנא בחרו מסלול לפני שממשיכים.",
+        "en": "Please choose a package before continuing."
+      },
+      "subj": {
+        "he": "בחירת מסלול — ",
+        "en": "Package selection — "
+      },
+      "body": {
+        "he": "שלום שני,\n\nאני מעוניינ/ת במסלול: {s}\n\nאשמח לתיאום שיחה.\n\nתודה!",
+        "en": "Hi Shani,\n\nI'm interested in the package: {s}\n\nI'd love to schedule a call.\n\nThank you!"
+      }
+    }
+  }
+}

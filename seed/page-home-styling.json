@@ -1,0 +1,372 @@
+{
+  "slug": "home-styling",
+  "title": "הלבשת הבית (₪12,000)",
+  "content": {
+    "meta": {
+      "title": {
+        "he": "שני ניסנבוים – הלבשת הבית",
+        "en": "Shani Nissinboiem – Home Styling"
+      },
+      "og_description": {
+        "he": "הלבשת הבית לפרויקט תכנון ועיצוב פנים",
+        "en": ""
+      }
+    },
+    "cover": {
+      "headline": {
+        "he": "הלבשת הבית",
+        "en": "Home Styling"
+      },
+      "subheadline": {
+        "he": "לפרויקט תכנון ועיצוב פנים",
+        "en": "For Interior Planning & Design"
+      },
+      "tagline": {
+        "he": "״הדיוק בפרטים הוא זה שיוצר את ההבדל בתחושה״",
+        "en": "\"Precision in the details is what creates the difference in feeling\""
+      },
+      "photo": {
+        "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+        "srcset": [
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-768x432.jpg",
+            "w": 768
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1024x576.jpg",
+            "w": 1024
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-1536x864.jpg",
+            "w": 1536
+          },
+          {
+            "url": "https://shanissinboiem.com/wp-content/uploads/2026/06/ea8dfb47-d464-4ba8-87ee-72961bbf25fe-2048x1152.jpg",
+            "w": 2048
+          }
+        ],
+        "width": 2560,
+        "height": 1440,
+        "alt": "כניסה לבית פרטי עם דלת שחורה מעוצבת – פרויקט של שני ניסנבוים"
+      }
+    },
+    "nav_label": {
+      "he": "הלבשת הבית",
+      "en": "Home Styling"
+    },
+    "wa_default": {
+      "he": "הלבשת הבית",
+      "en": "Home Styling"
+    },
+    "packages": {
+      "intro": null,
+      "default_index": 0,
+      "price_note": {
+        "he": "לפני מע״מ · לפרויקט",
+        "en": "Before VAT · per project"
+      },
+      "items": [
+        {
+          "name": {
+            "he": "הלבשת הבית",
+            "en": "Home Styling"
+          },
+          "desc": {
+            "he": "ליווי עיצובי מלא — מקונספט ולוח השראה ועד הלבשת הבית המוגמרת, על בסיס תכנית אדריכלית קיימת",
+            "en": "Full design guidance — from concept and mood board to the finished, fully-styled home, based on your existing architectural plan"
+          },
+          "scope": {
+            "he": "",
+            "en": ""
+          },
+          "price": 12000,
+          "featured": false,
+          "groups": [
+            {
+              "title": {
+                "he": "קבלת חומרי הפרויקט",
+                "en": "Receiving the Project Materials"
+              },
+              "items": [
+                {
+                  "he": "קבלת תכנית אדריכלית מסודרת מהלקוח (בקובץ PDF או DWG)",
+                  "en": "Receiving an organized architectural plan from the client (PDF or DWG file)"
+                },
+                {
+                  "he": "מעבר על התכניות והבנת הצרכים, אורח החיים והתקציב",
+                  "en": "Reviewing the plans and understanding the needs, lifestyle, and budget"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "גיבוש קונספט עיצובי",
+                "en": "Shaping the Design Concept"
+              },
+              "items": [
+                {
+                  "he": "פגישת היכרות ואפיון צרכים",
+                  "en": "Introductory meeting and needs assessment"
+                },
+                {
+                  "he": "הגדרת סגנון עיצובי, צבעוניות ואווירה רצויה",
+                  "en": "Defining the design style, color palette, and desired atmosphere"
+                },
+                {
+                  "he": "בניית קונספט עיצובי מותאם אישית לבית ולדייריו",
+                  "en": "Building a design concept tailored to the home and its residents"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "לוח השראה (Mood Board)",
+                "en": "Mood Board"
+              },
+              "items": [
+                {
+                  "he": "יצירת לוח השראה מקצועי הכולל חומרים, צבעים, טקסטורות, ריהוט ופריטי סטיילינג",
+                  "en": "Creating a professional mood board including materials, colors, textures, furniture, and styling pieces"
+                },
+                {
+                  "he": "יצירת שפה עיצובית אחידה לכלל החללים",
+                  "en": "Creating a unified design language across all the spaces"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "תכנית העמדה",
+                "en": "Layout Plan"
+              },
+              "items": [
+                {
+                  "he": "הכנת תכנית העמדה לחלל המרכזי",
+                  "en": "Preparing a furniture layout plan for the main space"
+                },
+                {
+                  "he": "עד שתי חלופות תכנון לבחירה",
+                  "en": "Up to two layout options to choose from"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "הדמיה לחלל המרכזי",
+                "en": "Rendering of the Main Space"
+              },
+              "items": [
+                {
+                  "he": "הדמיה תלת-ממדית אחת לחלל המרכזי",
+                  "en": "One 3D rendering of the main space"
+                },
+                {
+                  "he": "המחשה מלאה של הקונספט העיצובי טרם הרכישות",
+                  "en": "A full visualization of the design concept before any purchases"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "בחירת ריהוט והלבשת הבית",
+                "en": "Furniture Selection & Home Styling"
+              },
+              "items": [
+                {
+                  "he": "התאמת ריהוט, גופי תאורה, שטיחים, טקסטיל ואקססוריז",
+                  "en": "Matching furniture, light fixtures, rugs, textiles, and accessories"
+                },
+                {
+                  "he": "בניית רשימת רכישות מסודרת בהתאם לתקציב שהוגדר",
+                  "en": "Building an organized shopping list according to the defined budget"
+                }
+              ]
+            },
+            {
+              "title": {
+                "he": "ליווי לרכישות",
+                "en": "Purchasing Guidance"
+              },
+              "items": [
+                {
+                  "he": "שליחת קישורים לרכישה אונליין של כלל הפריטים שנבחרו",
+                  "en": "Sending online purchase links for all the selected items"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "compare": {
+      "enabled": false,
+      "tag": {
+        "he": "",
+        "en": ""
+      },
+      "title": {
+        "he": "",
+        "en": ""
+      },
+      "price_label": {
+        "he": "",
+        "en": ""
+      },
+      "rows": []
+    },
+    "addons": {
+      "enabled": true,
+      "tag": {
+        "he": "שירותים משלימים",
+        "en": "Complementary Services"
+      },
+      "title": {
+        "he": "תוספות ואופציות",
+        "en": "Add-ons & Options"
+      },
+      "text": {
+        "he": "כל תוספת ניתנת לשילוב בהצעה, בתיאום מראש.",
+        "en": "Any add-on can be included in the offer, by prior arrangement."
+      },
+      "items": [
+        {
+          "name": {
+            "he": "הדמיה נוספת",
+            "en": "Additional rendering"
+          },
+          "desc": {
+            "he": "המחשה ויזואלית לחלל נוסף",
+            "en": "Visual rendering of an additional space"
+          },
+          "price": {
+            "he": "800 – 1,500 ₪",
+            "en": ""
+          }
+        },
+        {
+          "name": {
+            "he": "יום רכש נוסף",
+            "en": "Additional procurement day"
+          },
+          "desc": {
+            "he": "ליווי נוסף בבחירת חומרים וספקים",
+            "en": "Additional guidance in selecting materials and suppliers"
+          },
+          "price": {
+            "he": "1,500 ₪",
+            "en": ""
+          }
+        },
+        {
+          "name": {
+            "he": "תכנון נגרות נוסף",
+            "en": "Additional carpentry design"
+          },
+          "desc": {
+            "he": "תכנון מורכב מעבר להיקף",
+            "en": "Complex design beyond the defined scope"
+          },
+          "price": {
+            "he": "לפי היקף",
+            "en": "By scope"
+          }
+        },
+        {
+          "name": {
+            "he": "תוכניות / שינויים",
+            "en": "Plans / revisions"
+          },
+          "desc": {
+            "he": "עדכון תוכניות לאחר אישור",
+            "en": "Updating plans after approval"
+          },
+          "price": {
+            "he": "לפי צורך",
+            "en": "As needed"
+          }
+        },
+        {
+          "name": {
+            "he": "כתב כמויות",
+            "en": "Bill of quantities"
+          },
+          "desc": {
+            "he": "מסמך מפורט",
+            "en": "Detailed document"
+          },
+          "price": {
+            "he": "1,200 ₪",
+            "en": ""
+          }
+        }
+      ]
+    },
+    "notes": {
+      "enabled": true,
+      "title": {
+        "he": "הבהרות כלליות",
+        "en": "General Notes"
+      },
+      "items": [
+        {
+          "he": "היקף השירות נגזר מגודל הנכס, מורכבותו ורמת הליווי הנדרשת. לפרויקטים גדולים מהמוגדר תינתן הצעה מותאמת.",
+          "en": "The scope of the service depends on the size of the property, its complexity, and the level of guidance required. For projects larger than defined, a tailored quote will be provided."
+        },
+        {
+          "he": "ייתכנו התאמות להצעה בהתאם לנתוני הפרויקט הספציפי. כל שינוי יאושר מראש ובכתב.",
+          "en": "The offer may be adjusted according to the specifics of the particular project. Any change will be approved in advance and in writing."
+        },
+        {
+          "he": "שירותים נוספים מעבר להגדרת השירות יתומחרו בנפרד. הכל ברור ומוגדר מראש — אין הפתעות.",
+          "en": "Services beyond the defined scope will be priced separately. Everything is clear and defined in advance — no surprises."
+        }
+      ]
+    },
+    "cta": {
+      "enabled": true,
+      "tag": {
+        "he": "הצעד הבא",
+        "en": "The Next Step"
+      },
+      "title": {
+        "he": "מוכנים\nלהתחיל?",
+        "en": "Ready\nto begin?"
+      },
+      "text": {
+        "he": "אשלח לכם את החוזה תוך 24 שעות",
+        "en": "I'll send you the contract within 24 hours"
+      },
+      "choices": [
+        {
+          "tier": {
+            "he": "הצעת מחיר",
+            "en": "Price Quote"
+          },
+          "package": 0
+        }
+      ],
+      "yes": {
+        "he": "כן, אני רוצה להתקדם",
+        "en": "Yes, I want to move forward"
+      },
+      "no": {
+        "he": "עדיין לא בשלב הזה",
+        "en": "Not at this stage yet"
+      }
+    },
+    "ui": {
+      "pick_first": {
+        "he": "אנא בחרו לפני שממשיכים.",
+        "en": "Please make a selection before continuing."
+      },
+      "subj": {
+        "he": "הצעת מחיר — ",
+        "en": "Price quote — "
+      },
+      "body": {
+        "he": "שלום שני,\n\nאני מעוניינ/ת ב: {s}\n\nאשמח לתיאום שיחה.\n\nתודה!",
+        "en": "Hi Shani,\n\nI'm interested in: {s}\n\nI'd love to schedule a call.\n\nThank you!"
+      }
+    }
+  }
+}

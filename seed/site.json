@@ -1,0 +1,213 @@
+{
+  "brand": {
+    "name": "SHANI NISSINBOIEM",
+    "title": "INTERIOR DESIGNER",
+    "logo": {
+      "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/Untitled-design.png",
+      "alt": "Shani Nissinboiem — Interior Design Studio"
+    },
+    "footer_logo": {
+      "url": "media/footer-logo.png",
+      "alt": "שני ניסנבוים"
+    }
+  },
+  "contact": {
+    "phone_display": "050-877-2794",
+    "whatsapp": "972508772794",
+    "email": "shani.nidesign@gmail.com",
+    "instagram_url": "https://www.instagram.com/shanissinboiem.studio?igsh=cnlrcjY3eTRoNTRz",
+    "instagram_handle": "shanissinboiem.studio"
+  },
+  "nav_about": {
+    "he": "אודות",
+    "en": "About"
+  },
+  "nav_contact": {
+    "he": "צרו קשר",
+    "en": "Contact"
+  },
+  "about": {
+    "tag": {
+      "he": "קצת עליי",
+      "en": "About Me"
+    },
+    "title": {
+      "he": "שלום,\nנעים להכיר!",
+      "en": "Hello,\nNice to meet you!"
+    },
+    "paragraphs": [
+      {
+        "he": "אני שני ניסנבוים, מעצבת ומתכננת אדריכלות פנים, המתמחה ביצירת חללים מוקפדים, אלגנטיים ועל-זמניים.\nבעלת תואר ראשון ב – b.design.",
+        "en": "I'm Shani Nissinboiem, an interior architect and designer, specializing in crafting refined, elegant, and timeless spaces.\nI hold a B.Design degree."
+      },
+      {
+        "he": "אני מאמינה שעיצוב מוצלח נולד מתוך שילוב של תכנון מדויק, חומרים איכותיים והבנה עמוקה של האנשים שחיים בו.\nלכן כל פרויקט מתחיל בהקשבה, וממשיך בתהליך אישי ומוקפד שבו כל פרט מקבל את תשומת הלב הראויה.",
+        "en": "I believe successful design is born from the union of precise planning, quality materials, and a deep understanding of the people who live in the space.\nSo every project begins with listening, and continues as a personal, meticulous process in which every detail receives the attention it deserves."
+      },
+      {
+        "he": "הקו העיצובי שלי מאופיין באסתטיקה נקייה, חומרים טבעיים ותכנון פונקציונלי, במטרה ליצור חללים שמרגישים רגועים, מאוזנים ונכונים לאורך שנים.",
+        "en": "My design language is defined by a clean aesthetic, natural materials, and functional planning — creating spaces that feel calm, balanced, and right for years to come."
+      },
+      {
+        "he": "אני מלווה את לקוחותיי משלב הרעיון ועד להגשמתו, כדי להפוך את החזון שלהם לבית מדויק, אישי ומלא אופי.",
+        "en": "I accompany my clients from the first idea through to its realization, turning their vision into a home that is precise, personal, and full of character."
+      }
+    ],
+    "photo": {
+      "url": "media/about.jpg",
+      "alt": "שני ניסנבוים"
+    }
+  },
+  "process": {
+    "tag": {
+      "he": "תהליך העבודה",
+      "en": "The Process"
+    },
+    "title": {
+      "he": "מהרעיון הראשון\nעד לבית המוגמר",
+      "en": "From the first idea\nto the finished home"
+    },
+    "steps": [
+      {
+        "title": {
+          "he": "פגישת היכרות",
+          "en": "Introductory Meeting"
+        },
+        "text": {
+          "he": "מכירים, מבינים את הצרכים, מגדירים חזון ותקציב לפרויקט.",
+          "en": "We get acquainted, understand the needs, and define the vision and budget for the project."
+        }
+      },
+      {
+        "title": {
+          "he": "תכנון ועיצוב",
+          "en": "Planning & Design"
+        },
+        "text": {
+          "he": "קונספט, תוכניות עבודה, חומרים, גמרים ושפה עיצובית אחידה.",
+          "en": "Concept, working plans, materials, finishes, and a unified design language."
+        }
+      },
+      {
+        "title": {
+          "he": "רכש וספקים",
+          "en": "Procurement & Suppliers"
+        },
+        "text": {
+          "he": "ליווי בבחירות, ימי קניות, עבודה מול ספקים וקבלנים.",
+          "en": "Guidance through the selections, shopping days, and work with suppliers and contractors."
+        }
+      },
+      {
+        "title": {
+          "he": "ביצוע וסיום",
+          "en": "Execution & Completion"
+        },
+        "text": {
+          "he": "פיקוח, בקרה ומסירת בית מדויק — בדיוק כמו שתכננתם.",
+          "en": "Supervision, quality control, and handover of a precise home — exactly as you planned it."
+        }
+      }
+    ]
+  },
+  "gallery": {
+    "tag": {
+      "he": "פרויקטים נבחרים",
+      "en": "Selected Projects"
+    },
+    "title": {
+      "he": "הצצה לפרויקטים",
+      "en": "A Glimpse of the Projects"
+    },
+    "link_label": {
+      "he": "לגלריה ←",
+      "en": "To the Gallery →"
+    },
+    "items": [
+      {
+        "title": "T House",
+        "url": "https://shanissinboiem.com/t-house/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/11/shani-108-scaled.jpg",
+          "alt": "T House"
+        }
+      },
+      {
+        "title": "Urban House",
+        "url": "https://shanissinboiem.com/urban-house/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/urban-house.jpg",
+          "alt": "Urban House"
+        }
+      },
+      {
+        "title": "The L House",
+        "url": "https://shanissinboiem.com/the-l-house/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%9E%D7%AA%D7%97%D7%9C%D7%A4%D7%AA-1.jpg",
+          "alt": "The L House"
+        }
+      },
+      {
+        "title": "Winpac",
+        "url": "https://shanissinboiem.com/winpac/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/winpac5.jpg",
+          "alt": "Winpac"
+        }
+      },
+      {
+        "title": "Tzoofit",
+        "url": "https://shanissinboiem.com/tzoofit/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/02/tzoofit.png",
+          "alt": "Tzoofit"
+        }
+      },
+      {
+        "title": "Neve Oz",
+        "url": "https://shanissinboiem.com/neve-oz/",
+        "image": {
+          "url": "https://shanissinboiem.com/wp-content/uploads/2025/11/%D7%A4%D7%A8%D7%98%D7%95%D7%A9%D7%A4%D7%AA%D7%97%D7%AA%D7%A7%D7%95%D7%95%D7%94_-2-scaled.jpg",
+          "alt": "Neve Oz"
+        }
+      }
+    ]
+  },
+  "ui": {
+    "wa_prefix": {
+      "he": "היי שני, אני מעוניינת ב",
+      "en": "Hi Shani, I'm interested in "
+    },
+    "mail_opened": {
+      "he": "✦ נהדר! נפתח עבורכם מייל — שלחו ונחזור אליכם בהקדם.",
+      "en": "✦ Wonderful! An email is opening — send it and we'll get back to you shortly."
+    },
+    "not_now": {
+      "he": "בסדר גמור! תמיד אפשר לחזור כשמוכנים :)",
+      "en": "No problem! You can always come back when you're ready :)"
+    }
+  },
+  "expired": {
+    "title": {
+      "he": "תוקף הקישור הסתיים",
+      "en": "This link has expired"
+    },
+    "text": {
+      "he": "הצעת המסלולים נשלחה לתקופה מוגבלת, והתוקף שלה הסתיים.\nאשמח לשלוח לכם קישור מעודכן.",
+      "en": "This offer was sent for a limited time, and it has expired.\nI'd be happy to send you an updated link."
+    },
+    "button": {
+      "he": "לקבלת קישור מעודכן",
+      "en": "Get an updated link"
+    },
+    "wa_text": {
+      "he": "היי שני 🤍 הקישור למסלולים שקיבלתי כבר לא בתוקף, אשמח לקישור מעודכן",
+      "en": "Hi Shani 🤍 the link I received has expired, I'd love an updated one"
+    },
+    "brand_line": {
+      "he": "שני ניסנבוים",
+      "en": "Shani Nissinboiem"
+    }
+  }
+}
