@@ -122,14 +122,12 @@ declare
   v_link public.offer_links%rowtype;
 begin
   select content into v_site from public.offer_site where id = 1;
-  select * into v_page from public.offer_pages where slug = lower(coalesce(p_slug, ''));
-  if not found then
-    return jsonb_build_object('status', 'not_found', 'site', v_site);
-  end if;
 
+  -- A valid client link opens its page even if the page address (slug) changed later.
   if coalesce(p_token, '') <> '' then
-    select * into v_link from public.offer_links where token = p_token and page_id = v_page.id;
+    select * into v_link from public.offer_links where token = p_token;
     if found and v_link.revoked_at is null and (v_link.expires_at is null or v_link.expires_at > now()) then
+      select * into v_page from public.offer_pages where id = v_link.page_id;
       if p_track then
         update public.offer_links
            set open_count = open_count + 1,
@@ -140,6 +138,11 @@ begin
       return jsonb_build_object('status', 'ok', 'site', v_site, 'page', v_page.content,
                                 'slug', v_page.slug, 'expires_at', v_link.expires_at);
     end if;
+  end if;
+
+  select * into v_page from public.offer_pages where slug = lower(coalesce(p_slug, ''));
+  if not found then
+    return jsonb_build_object('status', case when coalesce(p_token, '') <> '' then 'expired' else 'not_found' end, 'site', v_site);
   end if;
 
   if v_page.is_public or public.is_offer_admin() then

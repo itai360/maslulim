@@ -1,0 +1,12 @@
+{
+  "name": "maslulim",
+  "private": true,
+  "type": "module",
+  "description": "Shani Nissinboiem offer pages - served by Vercel, content in Supabase",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "extract-legacy": "node scripts/extract-legacy.mjs"
+  }
+}
