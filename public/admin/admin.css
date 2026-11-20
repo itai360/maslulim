@@ -201,3 +201,37 @@ dialog::backdrop { background: rgba(0,0,0,.35) }
   .cells .cell > span:first-child { grid-column: 1 / -1; font-weight: 600 }
 }
 @media (min-width: 901px) { .only-mobile { display: none !important } }
+
+/* ── phones ── */
+@media (max-width: 900px) {
+  /* 16px stops iOS Safari from zooming in when a field is tapped */
+  input[type=text], input[type=email], input[type=url], input[type=number], input[type=date], input[type=password], select, textarea { font-size: 16px; padding: 10px 12px }
+  .btn { min-height: 44px }
+  .btn.small { min-height: 40px; padding: 6px 12px; font-size: 14px }
+  .btn.icon { min-width: 40px }
+  /* the page header scrolls away; the editor's save bar stays pinned instead */
+  .top { position: static; padding: 8px 12px 0 }
+  .brand { font-size: 15px }
+  .tabs { margin: 0 -12px; padding: 0 8px 6px; scrollbar-width: none }
+  .tabs::-webkit-scrollbar { display: none }
+  .tabs button { padding: 10px 14px; font-size: 15px }
+  .ed-bar { padding: 10px 12px; gap: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.06) }
+  .ed-bar b { font-size: 15px }
+  .ed-body { padding: 10px 10px 100px }
+  details.sec > summary { padding: 14px 14px; font-size: 16px }
+  .sec-body { padding: 4px 12px 14px }
+  .item > .ibody { padding: 4px 10px 12px }
+  .bi .lang { grid-template-columns: 22px 1fr; gap: 4px }
+  .img { grid-template-columns: 72px 1fr }
+  .img .thumb { width: 72px; height: 56px }
+  .pv-bar { padding: 8px 10px; padding-top: max(8px, env(safe-area-inset-top)) }
+  h2.title { font-size: 24px }
+  .newlink, .card { padding: 14px }
+  /* client links: each row becomes a labelled card */
+  .ltable td[data-label] { display: flex; gap: 8px; align-items: baseline }
+  .ltable td[data-label]::before { content: attr(data-label); color: var(--muted); font-size: 13px; min-width: 76px; flex: none }
+  .ltable td.act { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 8px }
+  .ltable td.act .btn { flex: 1 1 auto }
+  .filters button { padding: 6px 14px; font-size: 14px }
+  dialog { max-height: 85vh }
+}

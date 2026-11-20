@@ -348,10 +348,10 @@ function renderLinks() {
         const [st, cls] = linkStatus(l);
         return h('tr', {},
           h('td', {}, h('b', {}, l.client_name || 'ללא שם'), l.note ? h('div', { class: 'muted' }, l.note) : null, h('div', { class: 'muted' }, 'נוצר ' + fmtDay(l.created_at))),
-          h('td', {}, l.offer_pages?.title || l.offer_pages?.slug || ''),
-          h('td', {}, h('span', { class: 'badge ' + cls }, st)),
-          h('td', {}, l.expires_at ? fmtDay(l.expires_at) : 'ללא תפוגה'),
-          h('td', {}, l.open_count ? `${l.open_count} · לאחרונה ${fmtDate(l.last_opened_at)}` : h('span', { class: 'muted' }, 'עוד לא נפתח')),
+          h('td', { 'data-label': 'דף' }, l.offer_pages?.title || l.offer_pages?.slug || ''),
+          h('td', { 'data-label': 'סטטוס' }, h('span', { class: 'badge ' + cls }, st)),
+          h('td', { 'data-label': 'בתוקף עד' }, l.expires_at ? fmtDay(l.expires_at) : 'ללא תפוגה'),
+          h('td', { 'data-label': 'צפיות' }, l.open_count ? `${l.open_count} · לאחרונה ${fmtDate(l.last_opened_at)}` : h('span', { class: 'muted' }, 'עוד לא נפתח')),
           h('td', { class: 'act' },
             h('button', { class: 'btn small', onclick: () => copy(linkUrl(l)) }, 'העתקה'),
             h('button', { class: 'btn small', onclick: () => waShare(linkUrl(l)) }, 'וואטסאפ'),
@@ -761,14 +761,16 @@ async function uploadImage(fileObj, { srcset, keepPng }) {
 }
 
 // ════════════════════════ editor (page + site) ════════════════════════
+const defaultDevice = () => (window.matchMedia('(max-width: 900px)').matches ? 'mobile' : 'desktop');
+
 function openPageEditor(row) {
   if (state.editor?.dirty && !confirm('יש שינויים שלא נשמרו. לצאת בלי לשמור?')) return;
-  state.editor = { kind: 'page', row, draft: clone(row.content) || {}, meta: { title: row.title, slug: row.slug, is_public: row.is_public }, dirty: false, device: 'desktop' };
+  state.editor = { kind: 'page', row, draft: clone(row.content) || {}, meta: { title: row.title, slug: row.slug, is_public: row.is_public }, dirty: false, device: defaultDevice() };
   render();
 }
 function openSiteEditor() {
   const row = state.site;
-  state.editor = { kind: 'site', row, draft: clone(row.content) || {}, dirty: false, device: 'desktop', previewPage: state.pages[0]?.id };
+  state.editor = { kind: 'site', row, draft: clone(row.content) || {}, dirty: false, device: defaultDevice(), previewPage: state.pages[0]?.id };
   render();
 }
 
