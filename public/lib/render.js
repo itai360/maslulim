@@ -7,6 +7,9 @@
 // added to a he->en dictionary that public/assets/offer.js uses to switch language,
 // exactly like the original hand-built pages did.
 
+// Bump when public/assets/offer.css or offer.js change, so phones don't keep a cached copy.
+const ASSET_V = '2026-11-20';
+
 const esc = (s) => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -57,7 +60,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">\n` : ''}<meta name
 <link rel="manifest" href="${esc(assetBase)}/icons/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${esc(assetBase)}/assets/offer.css">
+<link rel="stylesheet" href="${esc(assetBase)}/assets/offer.css?v=${ASSET_V}">
 </head>`;
 }
 
@@ -256,7 +259,7 @@ ${navLinks}
 ${(about.paragraphs || []).map((p) => `      <p>${t(p)}</p>`).join('\n')}
     </div>
     <div class="about-photo">
-      <img src="${esc(about.photo?.url)}" alt="${esc(about.photo?.alt)}">
+      <img src="${esc(about.photo?.url)}" alt="${esc(about.photo?.alt)}" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -280,7 +283,7 @@ ${(proc.steps || []).map((s, i) => `      <div class="step"><div class="sn2">${p
     <div class="grid">
 ${(gal.items || []).map((g, i) => `      <div class="gitem g${i + 1}">
         <a href="${esc(g.url)}" target="_blank">
-          <img src="${esc(g.image?.url)}" alt="${esc(g.image?.alt || g.title)}">
+          <img src="${esc(g.image?.url)}" alt="${esc(g.image?.alt || g.title)}" loading="lazy" decoding="async">
           <div class="gcap"><span class="gcap-t">${esc(g.title)}</span><span class="gcap-link">${t(gal.link_label)}</span></div>
         </a>
       </div>`).join('\n')}
@@ -304,7 +307,7 @@ ${dots}</section>
 ${compare}${addons}${notes}${ctaHtml}<!-- ══ FOOTER ══ -->
 <footer>
   <div class="flogo">
-    <img src="${esc(brand.footer_logo?.url)}" alt="${esc(brand.footer_logo?.alt)}">
+    <img src="${esc(brand.footer_logo?.url)}" alt="${esc(brand.footer_logo?.alt)}" loading="lazy" decoding="async">
   </div>
   <div class="fsub" style="color:#000 !important"><a href="mailto:${esc(c.email)}">${esc(c.email)}</a> &nbsp;·&nbsp; <a id="waPhone" class="wa-link" href="${esc(wa)}">${esc(c.phone_display)}</a> &nbsp;·&nbsp; <a href="${esc(c.instagram_url)}" target="_blank" rel="noopener">@${esc(c.instagram_handle)}</a></div>
 </footer>
@@ -339,7 +342,7 @@ ${compare}${addons}${notes}${ctaHtml}<!-- ══ FOOTER ══ -->
   })}
 ${body}
 <script id="offer-config" type="application/json">${jsonForScript(config)}</script>
-<script src="${esc(assetBase)}/assets/offer.js"></script>
+<script src="${esc(assetBase)}/assets/offer.js?v=${ASSET_V}"></script>
 </body>
 </html>
 `;
@@ -354,7 +357,7 @@ export function renderExpired({ site, assetBase = '' }) {
   const nl2br = (s) => String(s || '').split('\n').map(esc).join('<br>');
   return `${head({ title: `${he(x.title)} · ${he(x.brand_line)}`, description: '', image: '', assetBase })}
 <body>
-<div style="min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:40px 24px;background:#fff;font-family:Assistant,sans-serif;direction:rtl"><div style="max-width:430px;text-align:center"><div style="font-size:11px;letter-spacing:4px;color:#888;font-weight:400">${esc(he(x.brand_line))}</div><div style="width:40px;height:1px;background:#ddd;margin:26px auto"></div><h1 style="font-size:32px;font-weight:200;color:#1a1a1a;line-height:1.4;margin:0 0 18px">${esc(he(x.title))}</h1><p style="font-size:16px;font-weight:300;color:#666;line-height:1.9;margin:0 0 32px">${nl2br(he(x.text))}</p><a href="${esc(wa)}" style="display:inline-block;padding:15px 34px;background:#1a1a1a;color:#fff;font-size:15px;font-weight:300;letter-spacing:1px;text-decoration:none">${esc(he(x.button))}</a></div></div>
+<div style="min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:40px 24px;background:#fff;font-family:Assistant,sans-serif;direction:rtl"><div style="max-width:430px;text-align:center"><div style="font-size:11px;letter-spacing:4px;color:#888;font-weight:400">${esc(he(x.brand_line))}</div><div style="width:40px;height:1px;background:#ddd;margin:26px auto"></div><h1 style="font-size:32px;font-weight:200;color:#1a1a1a;line-height:1.4;margin:0 0 18px">${esc(he(x.title))}</h1><p style="font-size:16px;font-weight:300;color:#666;line-height:1.9;margin:0 0 32px">${nl2br(he(x.text))}</p><a href="${esc(wa)}" style="display:inline-block;padding:15px 34px;background:#1a1a1a;color:#fff;font-size:15px;font-weight:300;letter-spacing:1px;text-decoration:none">${esc(he(x.button))}</a></div></div>
 </body>
 </html>
 `;
