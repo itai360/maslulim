@@ -19,5 +19,6 @@ icon(512).save(f'{out}/icon-512.png', optimize=True)
 icon(192).save(f'{out}/icon-192.png', optimize=True)
 icon(180).save(f'{out}/apple-touch-icon.png', optimize=True)
 icon(32).save(f'{out}/favicon-32.png', optimize=True)
-icon(256).save(f'{out}/favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)])
+# RGBA PNG frames: Next.js (Turbopack) rejects ICO files with RGB frames
+icon(256).convert('RGBA').save(f'{out}/favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)], bitmap_format='png')
 print('bbox', bbox)
