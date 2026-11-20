@@ -144,7 +144,40 @@ async function showLogin(message) {
   ));
 }
 
+function passwordForm(forced, onDone) {
+  const p1 = h('input', { type: 'password', placeholder: 'סיסמה חדשה (לפחות 8 תווים)', required: true, minlength: 8, dir: 'ltr', autocomplete: 'new-password' });
+  const p2 = h('input', { type: 'password', placeholder: 'שוב את הסיסמה החדשה', required: true, minlength: 8, dir: 'ltr', autocomplete: 'new-password' });
+  const msg = h('div', { class: 'msg' });
+  return h('form', {
+    onsubmit: async (e) => {
+      e.preventDefault();
+      if (p1.value !== p2.value) { msg.textContent = 'הסיסמאות לא זהות'; return; }
+      msg.textContent = 'שומר…';
+      const { data, error } = await sb.auth.updateUser({ password: p1.value, data: { must_change_password: false } });
+      if (error) { msg.textContent = error.message; return; }
+      user = data.user;
+      toast('הסיסמה עודכנה ✓');
+      onDone();
+    },
+  }, forced ? h('p', {}, 'זו הכניסה הראשונה - בחרו סיסמה אישית חדשה.') : null, p1, p2,
+  h('button', { class: 'btn primary', type: 'submit' }, 'שמירת סיסמה'), msg);
+}
+
+function changePasswordDialog() {
+  const dlg = h('dialog', {});
+  dlg.append(h('div', { class: 'dlg' }, h('h3', {}, 'שינוי סיסמה'),
+    passwordForm(false, () => dlg.close()),
+    h('button', { class: 'btn ghost', onclick: () => dlg.close() }, 'ביטול')));
+  document.body.append(dlg);
+  dlg.addEventListener('close', () => dlg.remove());
+  dlg.showModal();
+}
+
 async function afterLogin() {
+  if (user?.user_metadata?.must_change_password) {
+    app.replaceChildren(h('div', { class: 'login' }, h('h1', {}, 'סיסמה חדשה'), passwordForm(true, () => afterLogin())));
+    return;
+  }
   app.replaceChildren(h('div', { class: 'boot' }, 'טוען…'));
   const { data: ok, error } = await sb.rpc('is_offer_admin');
   if (error || !ok) {
@@ -190,7 +223,7 @@ function render() {
       class: (state.editor ? (state.editor.kind === 'site' ? 'site' : 'pages') : state.view) === k ? 'on' : '',
       onclick: () => go(k),
     }, label))),
-    h('div', { class: 'who' }, h('span', { class: 'email' }, user?.email || ''), h('button', { class: 'btn small ghost', onclick: () => { if (go(state.view)) sb.auth.signOut(); } }, 'יציאה')),
+    h('div', { class: 'who' }, h('span', { class: 'email' }, user?.email || ''), h('button', { class: 'btn small ghost', onclick: changePasswordDialog }, 'סיסמה'), h('button', { class: 'btn small ghost', onclick: () => { if (go(state.view)) sb.auth.signOut(); } }, 'יציאה')),
   );
   let body;
   if (state.editor) body = renderEditor();

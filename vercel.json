@@ -4,23 +4,56 @@
   "buildCommand": "",
   "outputDirectory": "public",
   "redirects": [
-    { "source": "/", "destination": "https://shanissinboiem.com", "permanent": false },
-    { "source": "/admin", "destination": "/admin/", "permanent": false }
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "maslulim.vercel.app"
+        }
+      ],
+      "destination": "https://packages.shanissinboiem.com/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "https://shanissinboiem.com",
+      "permanent": false
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin/",
+      "permanent": false
+    }
   ],
   "rewrites": [
-    { "source": "/:slug([a-z0-9][a-z0-9-]{0,62})", "destination": "/api/page?slug=:slug" }
+    {
+      "source": "/:slug([a-z0-9][a-z0-9-]{0,62})",
+      "destination": "/api/page?slug=:slug"
+    }
   ],
   "headers": [
     {
       "source": "/admin/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "Cache-Control", "value": "no-cache" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, must-revalidate"
+        }
+      ]
     }
   ]
 }

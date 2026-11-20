@@ -63,7 +63,8 @@ label.check input { width: 18px; height: 18px; accent-color: #000 }
 .login p { color: var(--muted); margin-bottom: 24px }
 .login .btn { width: 100% }
 .login .or { margin: 18px 0; color: var(--muted); font-size: 13px }
-.login form { display: grid; gap: 10px }
+.login form, .dlg form { display: grid; gap: 10px }
+.login form p { color: var(--muted); margin-bottom: 4px }
 .login .msg { margin-top: 16px; font-size: 14px }
 
 /* ── shell ── */
