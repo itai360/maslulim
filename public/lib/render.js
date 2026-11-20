@@ -51,6 +51,10 @@ function head({ title, description, image, assetBase }) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 ${image ? `<meta property="og:image" content="${esc(image)}">\n` : ''}<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="${esc(assetBase)}/icons/favicon.ico" sizes="48x48">
+<link rel="icon" href="${esc(assetBase)}/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="${esc(assetBase)}/icons/apple-touch-icon.png">
+<link rel="manifest" href="${esc(assetBase)}/icons/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${esc(assetBase)}/assets/offer.css">
